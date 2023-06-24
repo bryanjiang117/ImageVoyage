@@ -1,1 +1,6 @@
-
+#gallery-upload {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 1rem;
+  border: 2px dashed;
+}
