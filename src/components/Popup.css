@@ -1,5 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: rgba(15, 15, 18, 0.35);
 }
 
 #popup {
@@ -13,21 +28,33 @@
   bottom: 0;
   margin: auto auto;
   height: 80lvh;
-  width: 70lvw;
+  width: 75lvw;
   min-height: 30rem;
   min-width: 50rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   text-align: center;
+}
+
+#content-container {
+  height: 100%;
+  width: 100%;
 }
 
 #photo-container {
   height: 100%;
-  width: 100%;
-  margin: 0 auto;
+  width: 60%;
+}
+
+#input-container {
+  flex-direction: column;
+  height: calc(100% - 3rem);
+  margin: 3rem;
+  width: 40%;
 }
 
 #button-container {
   justify-content: center;
+  height: 5rem;
   padding: 1rem 0;
 }
 
@@ -35,8 +62,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: calc(100% - 4rem);
   width: 100%;
+  margin: 3rem;
+  /* margin-bottom: 4rem; */
   border: 3px dashed black !important;
   border-radius: 1rem;
 }
@@ -56,18 +85,24 @@
 }
 
 #upload-symbol {
-  height: 10rem;
+  height: 5rem;
+  user-select: none;
 }
 
 .photo {
-  height: 100%;
+  height: 0;
+  min-height: 100%;
   width: 100%;
+  object-fit: cover !important;
   border-radius: 1rem;
 }
 
-#button-container button {
-  margin: 0 2rem !important;
+label:hover {
+  cursor: pointer;
 }
 
-#save {
+#button-container button {
+  margin: auto 2rem !important;
+  user-select: none;
 }
+

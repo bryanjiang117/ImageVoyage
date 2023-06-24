@@ -22,33 +22,48 @@ function Popup({ handleClose }) {
 
   return (
     <>
-      <div id="popup">
-        {/* Photo section */}
-        <div className="container" id="photo-container">
-          {/* Photo uploader */}
-          <input id="uploader" type="file" onChange={handleUpload} />
+      <div className="backdrop">
+        <div id="popup">
+          <div className="container" id="content-container">
+            {/* Photo section */}
+            <div className="container" id="photo-container">
+              {/* Photo uploader */}
+              <input id="uploader" type="file" onChange={handleUpload} />
 
-          {/* Custom UI for the photo uploader*/}
-          <label for="uploader" class="photo-upload">
-            {/* When no photo is uploaded yet */}
-            {!image && <img src="src/assets/upload.svg" id="upload-symbol" />}
+              {/* Custom UI for the photo uploader*/}
+              <label for="uploader" class="photo-upload">
+                {/* When no photo is uploaded yet */}
+                {!image && (
+                  <img src="src/assets/upload.svg" id="upload-symbol" />
+                )}
 
-            {/*When photo is uploaded, it is displayed*/}
-            {image && (
-              <img className="photo" src={URL.createObjectURL(image)} />
-            )}
-          </label>
-        </div>
+                {/*When photo is uploaded, it is displayed*/}
+                {image && (
+                  <img className="photo" src={URL.createObjectURL(image)} />
+                )}
+              </label>
+            </div>
 
-        {/* Save and delete button section */}
-        <div className="container" id="button-container">
-          <button onClick={handleSave} id="save">
-            Save
-          </button>
+            <div className="container" id="input-container">
+              <label>Title</label>
+              <input type="text"></input>
+              <label>Date</label>
+              <input type="text"></input>
+              <label>Description</label>
+              <input type="text"></input>
+            </div>
+          </div>
 
-          <button onClick={handleDelete} id="delete">
-            Delete
-          </button>
+          {/* Save and delete button section */}
+          <div className="container" id="button-container">
+            <button onClick={handleSave} id="save">
+              Save
+            </button>
+
+            <button onClick={handleDelete} id="delete">
+              Delete
+            </button>
+          </div>
         </div>
       </div>
     </>
