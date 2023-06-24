@@ -50,7 +50,7 @@ function Popup({ handleClose }) {
               <label>Date</label>
               <input type="text"></input>
               <label>Description</label>
-              <input type="text"></input>
+              <input type="text" id="description"></input>
             </div>
           </div>
 

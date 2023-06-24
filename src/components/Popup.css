@@ -42,14 +42,15 @@ body {
 
 #photo-container {
   height: 100%;
-  width: 60%;
+  width: 65%;
 }
 
 #input-container {
   flex-direction: column;
-  height: calc(100% - 3rem);
   margin: 3rem;
-  width: 40%;
+  margin-top: 5rem;
+  height: calc(100% - 3rem);
+  width: 35%;
 }
 
 #button-container {
@@ -97,7 +98,7 @@ body {
   border-radius: 1rem;
 }
 
-label:hover {
+#photo-container label:hover {
   cursor: pointer;
 }
 
@@ -106,3 +107,17 @@ label:hover {
   user-select: none;
 }
 
+#input-container label {
+  font-size: 1rem;  
+  font-weight: 600;
+}
+
+#input-container input {
+  margin: 1rem 3rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+#description {
+  padding: 2rem; 
+}
