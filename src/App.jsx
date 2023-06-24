@@ -6,15 +6,19 @@ import "./index.css";
 function App() {
   const [popup, setPopup] = useState(false);
 
-  const handleAddPhoto = () => {
-    setPopup(!popup);
+  const openPopup = () => {
+    setPopup(true);
+  };
+
+  const closePopup = () => {
+    setPopup(false);
   };
 
   return (
     <>
       <h1>Gallery</h1>
-      <AddButton onAddPhoto={handleAddPhoto} />
-      {popup && <Popup />}
+      <AddButton onAddPhoto={openPopup} />
+      {popup && <Popup handleClose={closePopup} />}
     </>
   );
 }

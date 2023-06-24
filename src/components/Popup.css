@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+}
+
+#popup {
+  background-color: white;
+  position: Absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+  height: 80lvh;
+  width: 70lvw;
+  min-height: 40rem;
+  min-width: 60rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#photo-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#button-container {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.photo-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 3px dashed black !important;
+  border-radius: 1rem;
+}
+
+.photo-upload:hover #upload-symbol {
+  transform: scale(110%);
+  filter: invert(87%) sepia(24%) saturate(4273%) hue-rotate(352deg)
+    brightness(113%) contrast(98%);
+}
+
+.photo-upload #upload-symbol {
+  transition: all 0.5s;
+}
+
+#uploader {
+  display: none;
+}
+
+#upload-symbol {
+  height: 10rem;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#button-container button {
+  margin: 0 2rem !important;
+}
+
+#save {
+}
