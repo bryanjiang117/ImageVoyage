@@ -5,7 +5,7 @@ import Upload from "./components/Upload";
 import Title from "./components/Title";
 import Row from "./components/Row";
 import Foot from "./components/Foot";
-import ImageObject from "./Imageobject";
+import ImageObject from "./utilities/Imageobject.js";
 import "./App.css";
 
 function App() {
@@ -15,70 +15,70 @@ function App() {
   // (temporary) this will eventually be an api call that gets all of the images made by this author
   let images = [
     new ImageObject(
-      "src/components/images/1.jpg",
+      "src/assets/1.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/2.jpg",
+      "src/assets/2.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/3.jpg",
+      "src/assets/3.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/4.jpg",
+      "src/assets/4.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/5.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/cat1.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/cat2.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/cat3.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/cat4.jpg",
       "title",
       "2023",
       "aesthetic photo",
       "jolin"
     ),
     new ImageObject(
-      "src/components/images/5.jpg",
+      "src/assets/cat.png",
       "title",
       "2023",
       "aesthetic photo",

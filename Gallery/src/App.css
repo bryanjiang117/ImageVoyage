@@ -31,7 +31,7 @@ li {
 /* gave this button same properties as the images (.img) below */
 .add {
   background-color: rgb(194, 204, 217);
-  background-image: url("src/components/images/icon.png");
+  background-image: url("src/assets/icon.png");
   background-size: 100px !important;
 }
 
@@ -54,7 +54,7 @@ li {
 }
 
 .img:hover {
-  background-image: url("src/components/images/edit.png") !important;
+  background-image: url("src/assets/edit.png") !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
