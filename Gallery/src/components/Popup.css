@@ -69,7 +69,6 @@ body {
   height: calc(100% - 4rem);
   width: 100%;
   margin: 3rem;
-  /* margin-bottom: 4rem; */
   border: 1px dashed black !important;
   border-radius: 1rem;
 }
@@ -112,6 +111,7 @@ body {
 #button-container button {
   margin: auto 2rem !important;
   user-select: none;
+  border: 2px dashed transparent;
 }
 
 #button-container button:hover {

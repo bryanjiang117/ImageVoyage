@@ -49,6 +49,8 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* to prevent it from moving back and forth when border is added/removed */
+  border: 2px dashed transparent;
 }
 
 .img:hover {
