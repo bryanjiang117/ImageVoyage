@@ -1,0 +1,72 @@
+#root {
+  margin-bottom: auto;
+}
+
+#navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+li {
+  display: inline;
+  margin-right: 85px;
+}
+
+.myGallery:hover {
+  text-decoration: underline;
+}
+
+.View:hover {
+  text-decoration: underline;
+}
+
+#title {
+  display: flex;
+  margin: 75px 0 75px 150px;
+}
+
+/* gave this button same properties as the images (.img) below */
+.add {
+  background-color: rgb(194, 204, 217);
+  background-image: url("src/components/images/icon.png");
+  background-size: 100px !important;
+}
+
+.add:hover {
+  border: 2px dashed black;
+  background-size: 110px !important;
+}
+
+/* ^^ here */
+.img,
+.add {
+  width: 263px;
+  height: 233px;
+  margin-right: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img:hover {
+  background-image: url("src/components/images/edit.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px dashed black;
+}
+
+.row {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+#foot {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 50px;
+}
