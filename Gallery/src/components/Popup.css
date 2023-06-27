@@ -29,7 +29,7 @@ body {
   margin: auto auto;
   height: 80lvh;
   width: 75lvw;
-  min-height: 30rem;
+  min-height: 35rem;
   min-width: 50rem;
   border-radius: 1.5rem;
   text-align: center;
@@ -55,7 +55,9 @@ body {
 }
 
 #button-container {
-  justify-content: center;
+  margin-left: 2rem;
+  margin-top: -1rem;
+  justify-content: left;
   height: 8rem;
   padding: 1rem 0;
 }
@@ -68,8 +70,12 @@ body {
   width: 100%;
   margin: 3rem;
   /* margin-bottom: 4rem; */
-  border: 3px dashed black !important;
+  border: 1px dashed black !important;
   border-radius: 1rem;
+}
+
+.photo-upload:hover {
+  border: 2px dashed black !important;
 }
 
 .photo-upload:hover #upload-symbol {
@@ -79,7 +85,7 @@ body {
 }
 
 .photo-upload #upload-symbol {
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 #uploader {
@@ -108,10 +114,15 @@ body {
   user-select: none;
 }
 
+#button-container button:hover {
+  border: 2px dashed black;
+}
+
 #input-container label {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 #input-container input,
