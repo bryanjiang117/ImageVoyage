@@ -24,7 +24,6 @@ li {
 }
 
 #title {
-  display: flex;
   margin: 75px 0 75px 150px;
 }
 
@@ -61,7 +60,7 @@ li {
   border: 2px dashed black;
 }
 
-.row {
+.my-row {
   display: flex;
   margin-left: 150px;
   margin-top: 40px;

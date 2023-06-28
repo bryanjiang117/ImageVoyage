@@ -109,7 +109,7 @@ function App() {
     firstRow = images;
   }
 
-  // initializing the second row
+  // initializing 2D array for the rest of the rows
   let rows = [];
   for (let i = 0; i <= images.length / 3; i++) {
     const row = [];
