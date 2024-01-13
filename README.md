@@ -1,4 +1,4 @@
-# Photo Gallery
+# ImageVoyage
 
 ## Project setup
 
